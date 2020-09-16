@@ -103,12 +103,6 @@ COPY jenkins-plugin-cli.sh /bin/jenkins-plugin-cli
 
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/jenkins.sh"]
 
-COPY ref ${REF}
-
-# from a derived Dockerfile, can use `RUN plugins.sh active.txt` to setup ${REF}/plugins from a support bundle
-COPY plugins.sh /usr/local/bin/plugins.sh
-COPY install-plugins.sh /usr/local/bin/install-plugins.sh
-
 ENV CASC_JENKINS_CONFIG ${JENKINS_HOME}/jenkins.yaml
 
 # Initialize git lfs for jenkins user
