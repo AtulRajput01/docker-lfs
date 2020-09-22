@@ -6,7 +6,6 @@ USER root
 
 RUN apt-get clean && apt-get update && apt-get dist-upgrade -y && apt-get install -y \
   locales \
-  make \
   procps \
   wget \
   && rm -rf /var/lib/apt/lists/*
