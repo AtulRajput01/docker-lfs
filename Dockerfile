@@ -1,10 +1,10 @@
-FROM jenkins/jenkins:2.249.2-lts
+FROM jenkins/jenkins:2.249.2-lts-jdk11
 
 LABEL maintainer="mark.earl.waite@gmail.com"
 
 USER root
 
-RUN apt-get clean && apt-get update && apt-get install -y \
+RUN apt-get clean && apt-get update && apt-get dist-upgrade -y && apt-get install -y \
   locales \
   procps \
   wget \
