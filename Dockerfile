@@ -4,7 +4,8 @@ LABEL maintainer="mark.earl.waite@gmail.com"
 
 USER root
 
-RUN apt-get clean && apt-get update && apt-get dist-upgrade -y && apt-get install -y \
+# hadolint ignore=DL3008
+RUN apt-get clean && apt-get update && apt-get dist-upgrade -y && apt-get install -y --no-install-recommends \
   locales \
   procps \
   wget \
@@ -18,6 +19,9 @@ RUN sed -i 's/. en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/g' /etc/locale.gen \
 
 USER jenkins
 
-ADD ref /usr/share/jenkins/ref/
+# $REF (defaults to `/usr/share/jenkins/ref/`) contains all reference configuration we want
+# to set on a fresh new installation. Use it to bundle additional plugins
+# or config file with your custom jenkins Docker image.
+COPY ref /usr/share/jenkins/ref/
 
 ENV CASC_JENKINS_CONFIG ${JENKINS_HOME}/jenkins.yaml
