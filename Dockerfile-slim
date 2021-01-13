@@ -6,10 +6,8 @@ USER root
 
 # hadolint ignore=DL3008
 RUN apt-get clean && apt-get update && apt-get dist-upgrade -y && apt-get install -y --no-install-recommends \
-  fontconfig \
   gnupg \
   locales \
-  lsb-release \
   make \
   procps \
   wget \
