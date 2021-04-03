@@ -1,4 +1,4 @@
-# Mark Waite's Jenkins LTS JDK 11 Docker image
+# Mark Waite's Jenkins LTS JDK 11 Docker image with plugins and jobs
 
 The Jenkins Continuous Integration and Delivery server [available on Docker Hub](https://hub.docker.com/r/jenkins/jenkins).
 
