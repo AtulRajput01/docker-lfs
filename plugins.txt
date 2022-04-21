@@ -2,7 +2,7 @@ PrioritySorter:4.1.0
 ace-editor:1.1
 adoptopenjdk:1.4
 analysis-model-api:10.10.0
-ant:1.13
+ant:473.vcfd6b_16ca_581
 antisamy-markup-formatter:2.7
 apache-httpcomponents-client-4-api:4.5.13-1.0
 async-http-client:1.9.40.0
@@ -45,7 +45,7 @@ code-coverage-api:2.0.4
 command-launcher:1.6
 conditional-buildstep:1.4.2
 config-file-provider:3.9.0
-configuration-as-code:1414.v878271fc496f
+configuration-as-code:1429.v09b_044a_c93de
 configurationslicing:430.v966357576543
 conventional-commits:0.11.0
 copyartifact:1.46.3
@@ -104,7 +104,7 @@ job-dsl:1.79
 jquery:1.12.4-1
 jquery3-api:3.6.0-2
 jsch:0.1.55.2
-junit:1.59
+junit:1.60
 junit-realtime-test-reporter:90.v7dc2c937f9a_8
 label-verifier:1.4
 ldap:2.8
@@ -169,7 +169,7 @@ text-finder:1.18
 theme-manager:0.6
 throttle-concurrents:2.7
 timestamper:1.17
-token-macro:285.vff7645a_56ff0
+token-macro:293.v283932a_0a_b_49
 trilead-api:1.57.v6e90e07157e1
 variant:1.4
 versioncolumn:2.2
